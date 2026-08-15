@@ -1,0 +1,37 @@
+{
+  "name": "chitra_backend",
+  "version": "1.0.0",
+  "description": "wear your own statement",
+  "keywords": [
+    "e-commerce"
+  ],
+  "homepage": "https://github.com/kalprajapati/chitra#readme",
+  "bugs": {
+    "url": "https://github.com/kalprajapati/chitra/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalprajapati/chitra.git"
+  },
+  "license": "ISC",
+  "author": "\"Kalp Prajapati, Dhruv Raval\"",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.23.3",
+    "sequelize": "^6.37.8"
+  }
+}
