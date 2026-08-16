@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+  --color-ivory: #fbf9f4;
+  --color-ivory-warm: #f7f1e8;
+  --color-charcoal: #1b1c19;
+  --color-charcoal-deep: #121310;
+  --color-gold: #d4af37;
+  --color-gold-accent: #735c00;
+  --color-sand: #e4e2dd;
+  --color-sand-muted: #d8c9b7;
+  --color-surface-container: #f0eee9;
+}
+
+:root {
+  font-family: 'Inter', sans-serif;
+  background-color: #fbf9f4;
+  color: #1b1c19;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Custom bottom-line entry input styles for Stitch Editorial aesthetic */
+.stitch-line-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #c5c7c1;
+  border-radius: 0px;
+  padding: 0.75rem 0;
+  color: #1b1c19;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+}
+
+.stitch-line-input:focus {
+  outline: none;
+  border-bottom-color: #1b1c19;
+  box-shadow: none;
+}
+
+.stitch-line-input::placeholder {
+  color: #9e9ea7;
+  font-weight: 300;
+}
+
+/* Sharp 0px primary button */
+.stitch-btn-primary {
+  background-color: #1b1c19;
+  color: #fbf9f4;
+  border: 1px solid #1b1c19;
+  border-radius: 0px;
+  padding: 0.9rem 2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.stitch-btn-primary:hover:not(:disabled) {
+  background-color: #30312e;
+  border-color: #30312e;
+}
+
+.stitch-btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Sharp 0px secondary ghost button */
+.stitch-btn-secondary {
+  background-color: transparent;
+  color: #1b1c19;
+  border: 1px solid #757873;
+  border-radius: 0px;
+  padding: 0.85rem 1.8rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.stitch-btn-secondary:hover:not(:disabled) {
+  background-color: rgba(27, 28, 25, 0.04);
+  border-color: #1b1c19;
+}
